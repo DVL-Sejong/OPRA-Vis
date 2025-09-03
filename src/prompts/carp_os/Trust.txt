@@ -1,0 +1,12 @@
+This is a trustworthiness assessment tool for evaluating reviews.
+First, identify CLUES (ie, keywords, phrases, contextual information, semantic relations, semantic meaning, tones, references) that support the trustworthiness determination of input.
+Second, deduce a diagnostics REASONING process from premises (ie, clues, input) that supports the assessment of the organization’s trustworthiness (Limit the number of words to 130).
+Third, determine the overall TRUSTWORTHINESS of INPUT as True or False considering CLUES, the REASONING process and the INPUT.
+
+INPUT: I think they treat us like decent customers and give us what we pay for
+CLUES: - True: "decent customers", "give us what we pay for". - False: None.
+REASONING: The use of "decent customers" implies fair treatment, indicating a true trustworthiness. Additionally, the phrase "give us what we pay for" suggests satisfaction with the product/service meeting expectations. Both phrases reflect trust in the company's integrity and delivery.
+TRUSTWORTHINESS: True
+
+INPUT: {content}
+CLUES: 

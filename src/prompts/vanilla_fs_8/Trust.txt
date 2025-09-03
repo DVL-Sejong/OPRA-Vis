@@ -1,0 +1,29 @@
+This is a trustworthiness assessment tool for evaluating reviews.
+Determine the overall TRUSTWORTHINESS of the INPUT as True or False.
+
+INPUT: I think they treat us like decent customers and give us what we pay for
+TRUSTWORTHINESS: True
+
+INPUT: They promised a two-year warranty but refused to honor it when I had issues.
+TRUSTWORTHINESS: False
+
+INPUT: Customer service was transparent about the delay and offered compensation.
+TRUSTWORTHINESS: True
+
+INPUT: The product descriptions are misleading and do not reflect the actual features.
+TRUSTWORTHINESS: False
+
+INPUT: Reviews are heavily moderated to only show positive feedback, raising doubts about authenticity.
+TRUSTWORTHINESS: False
+
+INPUT: The return process was straightforward and honored within the stated period.
+TRUSTWORTHINESS: True
+
+INPUT: Despite the high cost, the quality justifies the price, and their honesty about sourcing materials is appreciated.
+TRUSTWORTHINESS: True
+
+INPUT: The company frequently changes terms without notifying customers, leading to unexpected charges.
+TRUSTWORTHINESS: False
+
+INPUT: {content}
+TRUSTWORTHINESS: 

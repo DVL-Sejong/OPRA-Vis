@@ -1,0 +1,8 @@
+This is a satisfaction assessment tool for evaluating reviews.
+Determine the overall SATISFACTION of the INPUT as True or False.
+
+INPUT: Very good and Quality of product selling, so very caring with customer support also.
+SATISFACTION: The input praises the product's quality and the customer support, indicating satisfaction with both aspects of the service. There's no mention of dissatisfaction or negative experiences. Given the positive sentiments expressed towards product quality and customer care, the overall satisfaction is clearly true. The answer is True.
+
+INPUT: {content}
+SATISFACTION: 

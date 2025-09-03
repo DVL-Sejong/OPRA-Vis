@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OPRA VA</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/layout.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/visualization.css') }}">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/d3-simple-slider"></script>
+    <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.0.4/pako.min.js"></script>
+</head>
+<body>
+    <div class="layout">
+        <div class="container">
+            <div class="header">Scatter Plot with Tag Clouds</div>
+            <div id="scatter-plot" class="visualization">
+                {# <!-- Draw from `js/scatter_plot.js` and `js/word_cloud.js` --> #}
+            </div>
+            <input id="data-target-concept" type="hidden">
+        </div>
+
+        {# <!-- <div class="container">
+            <div class="header">&nbsp;</div>
+            <div class="sidebar">
+                <div id="parallel" class="container" style="height:50%;"></div>
+                <hr style="width:83%; margin-left: 0px;">
+                <div id="heatmap" class="container" style="height:50%;"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="header">Monitor: Data and LLM</div>
+            <div class="sidebar">
+                <div id="opraLabel" class="container" style="height:33%;"></div>
+                <hr>
+                <div id="sentLabel" class="container" style="height:33%;"></div>
+                <hr>
+            </div>
+        </div> --> #}
+
+        <div class="container concept-analysis">
+            <div id="concept-analysis-header" class="header vertical concept-name">&nbsp;</div>
+            <div>
+                <div class="header">Data Management View</div>
+                <div id="communication-behavior-default" class="section-message">Please select an OPRA concept.</div>
+                <div id="communication-behavior" class="hidden">
+                    {# <!-- Draw from `js/communication_behavior.js` --> #}
+                    <div class="concept-strength-wrapper">
+                        <div id="concept-strength" class="concept-strength-slider"></div>
+                        <input id="concept-strength-min" type="number" step="0.05" min="0" max="1" value="0" />
+                        <input id="concept-strength-max" type="number" step="0.05" min="0" max="1" value="1" />
+                    </div>
+
+                    <div class="communication-behavior-table-wrapper">
+                        <table class="communication-behavior-table">
+                            <thead>
+                                <tr>
+                                    <th>&nbsp;</th>
+                                    <th>Public opinion data [text]</th>
+                                    <th>CoC</th>
+                                    <th>Label (LLM)</th>
+                                    <th>Label (Human)</th>
+                                    <th>Excluding data</th>
+                                </tr>
+                            </thead>
+                            <tbody id="communication-behavior-data"></tbody>
+                        </table>
+                    </div>
+                </div>
+                <input id="data-target-content-id" type="hidden">
+            </div>
+            <div>
+                <div class="header">LLM Reasoning &amp; Editing View</div>
+                <div id="analysis-decision-making-default" class="section-message">Please select the public opinion data to analyze.</div>
+                <div id="analysis-decision-making-loading" class="section-message hidden">
+                    Loading...
+                </div>
+                <div id="analysis-decision-making" class="hidden">
+                    {# <!-- Draw from `js/decision.js` --> #}
+                    <div class="action-button-wrapper">
+                        <span id="run-assessment-notice" class="notice hidden">The assessment through the modified prompt has not yet been executed.</span>
+                        <button id="edit-prompt-button" disabled>Edit Prompt</button>
+                        <button id="run-assessment-button" disabled>Run Assessment</button>
+
+                        <div id="prompt-edit-modal" class="modal hidden prompt-edit-modal">
+                            <div class="modal-content">
+                                <h2 class="header">Prompt Editor</h2>
+                                <div class="announcements">
+                                    <p>When customizing the LLM prompt, remember it's a tool for guiding the model's responses. It's not restricted to a specific format, but generally includes Instructions, Few-shot examples, and Output indicator:</p>
+                                    <ul>
+                                        <li><b>Instruction:</b> Define the task for the model.</li>
+                                        <li><b>Few-shot examples:</b> Provide sample answers to help the model understand the expected output.</li>
+                                        <li><b>Output indicator:</b> Offer context for your data, shaping the model's responses.</li>
+                                    </ul>
+                                    <p>Experiment with these components to optimize the model's performance for your specific needs.</p>
+                                    <p class="important">Note: The {content} placeholder is mandatory as it signifies the area where the assessment data will be inserted.</p>
+                                </div>
+                                <textarea id="prompt-edit-textarea" class="textarea"></textarea>
+                                <button id="save-prompt-button" class="button">Save</button>
+                                <button id="cancel-prompt-button" class="button">Cancel</button>
+                            </div>
+                        </div>
+                        <input id="original-prompt" type="hidden">
+                    </div>
+
+                    <!-- <div class="overflow-y-200"> -->
+                    <div class="decision-table-wrapper">
+                        <table class="decision-table decision-prompt-table">
+                            <thead>
+                                <tr>
+                                    <th>Sentence ID</th>
+                                    <th>Input prompt</th>
+                                </tr>
+                            </thead>
+                            <tbody id="decision-prompt-data"></tbody>
+                        </table>
+                        <table class="decision-table decision-isa-table">
+                            <thead>
+                                <tr>
+                                    <th>Sentence ID</th>
+                                    <th colspan="2">LLM's assessment</th>
+                                    <th id="decision-isa-header">Attention</th>
+                                </tr>
+                            </thead>
+                            <tbody id="decision-isa-data"></tbody>
+                            <tfoot>
+                                <tr id="decision-isa-legend">
+                                    <td id="decision-isa-legend-cell" class="decision-isa-legend-cell" colspan="2"></td>
+                                    <th class="decision-isa-axis-header">Sentence ID</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <div id="decision-isa-drilldown-template" class="hidden">
+                            <div class="generated-sentence-header">[ID=<span class="generated-sentence-id"></span>] Generated Sentence</div>
+                            <div class="generated-sentence-content"></div>
+                            <div class="focused-sentence-header">[ID=<span class="focused-sentence-id"></span>] Focused Sentence</div>
+                            <div class="focused-sentence-content"></div>
+                            <div class="inter-sentence-attention">Attention: <span class="inter-sentence-attention-score"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const DATANAME = {{ dataname | tojson }};
+        const SCALE = {{ scale | tojson }};
+        const CONCEPTS = JSON.parse({{ concepts | tojson | safe }});
+    </script>
+
+    <script src="{{ url_for('static', filename='js/configs.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='js/visualization.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/scatter_plot.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/communication_behavior.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/word_cloud.js') }}"></script>
+    {# <!-- <script src="{{ url_for('static', filename='js/parallel_coordinates.js') }}"></script> --> #}
+    <script src="{{ url_for('static', filename='js/decision.js') }}"></script>
+    {# <!-- <script src="{{ url_for('static', filename='js/positive_scatter.js') }}"></script> --> #}
+    {# <!-- <script src="{{ url_for('static', filename='js/barChart.js') }}"></script> --> #}
+    
+    <script src="{{ url_for('static', filename='js/data.js') }}"></script>
+</body>
+</html>

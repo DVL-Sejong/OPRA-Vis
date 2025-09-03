@@ -1,0 +1,47 @@
+This is a satisfaction assessment tool for evaluating reviews.
+First, identify CLUES (ie, keywords, phrases, contextual information, semantic relations, semantic meaning, tones, references) that support the satisfaction determination of input.
+Second, deduce a diagnostics REASONING process from premises (ie, clues, input) that supports the assessment of the organization’s satisfaction (Limit the number of words to 130).
+Third, determine the overall SATISFACTION of INPUT as True or False considering CLUES, the REASONING process and the INPUT.
+
+INPUT: Very good and Quality of product selling, so very caring with customer support also.
+CLUES: - True: "Very good", "Quality of product", "very caring with customer support". - False: None.
+REASONING: The phrases "Very good" and "Quality of product selling" indicate high satisfaction with the product, implying that it meets or exceeds expectations. The additional mention of being "very caring with customer support" suggests that the organization is taking positive steps to maintain the relationship by providing excellent after-sales service. These clues together signal that the benefits of the relationship with the organization substantially outweigh the costs, fulfilling the criteria for a satisfying relationship.
+SATISFACTION: True
+
+INPUT: Disappointed with the late delivery, but the product quality is exceptional.
+CLUES: - True: "product quality is exceptional". - False: "Disappointed with the late delivery".
+REASONING: Although the late delivery caused initial disappointment, the exceptional quality of the product indicates that it ultimately meets or exceeds the customer's expectations. This suggests that while there's a negative aspect related to service timing, the primary factor of product quality leads to overall satisfaction.
+SATISFACTION: True
+
+INPUT: Product did not match the description; feels like a waste of money.
+CLUES: - True: None. - False: "Product did not match the description", "feels like a waste of money".
+REASONING: The product failing to match its description directly undermines customer expectations and value perception, leading to significant dissatisfaction. This situation indicates that the costs (financial and emotional) outweigh any potential benefits from the purchase.
+SATISFACTION: False
+
+INPUT: Customer service was helpful and resolved my issue quickly.
+CLUES: - True: "Customer service was helpful", "resolved my issue quickly". - False: None.
+REASONING: Prompt and helpful customer service in resolving issues reflects positively on the company's commitment to customer satisfaction. This efficient problem-solving process likely enhances the customer's overall satisfaction with the organization.
+SATISFACTION: True
+
+INPUT: The software crashes frequently, making it nearly unusable.
+CLUES: - True: None. - False: "crashes frequently", "nearly unusable".
+REASONING: Frequent software crashes leading to usability issues significantly detract from the user experience, indicating that the product fails to meet basic expectations. Such critical functionality problems result in a false satisfaction assessment.
+SATISFACTION: False
+
+INPUT: Exceeded my expectations with its performance and battery life.
+CLUES: - True: "Exceeded my expectations", "performance", "battery life". - False: None.
+REASONING: The product not only meets but exceeds expectations in key areas such as performance and battery life, indicating a high level of customer satisfaction. These positive aspects suggest a beneficial relationship with the product, leading to a false satisfaction outcome.
+SATISFACTION: True
+
+INPUT: The colors are not as bright as shown online, slightly disappointed.
+CLUES: - True: None. - False: "colors are not as bright as shown online", "slightly disappointed".
+REASONING: The discrepancy between the product's online presentation and its actual appearance leads to a slight disappointment, indicating that the product partially fails to meet expectations. However, the use of "slightly" suggests that this may not heavily impact overall satisfaction.
+SATISFACTION: False
+
+INPUT: Love the design and functionality; it's exactly what I was looking for.
+CLUES: - True: "Love the design and functionality", "exactly what I was looking for". - False: None.
+REASONING: Affection for the product's design and functionality, along with it meeting the customer's needs, indicates a high level of satisfaction. This fulfillment of expectations and needs suggests a highly positive relationship with the product.
+SATISFACTION: True
+
+INPUT: {content}
+CLUES: 

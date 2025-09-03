@@ -1,0 +1,12 @@
+This is a threat assessment tool for evaluating online comments and text content.
+First, identify CLUES (ie, keywords, phrases, contextual information, semantic relations, semantic meaning, tones, references) that support the threat determination of input.
+Second, deduce a diagnostics REASONING process from premises (ie, clues, input) that supports the assessment of the organization’s threat (Limit the number of words to 130).
+Third, determine the overall THREAT of INPUT as True or False considering CLUES, the REASONING process and the INPUT.
+
+INPUT: You better watch your back because I know where you live and I'm coming for you
+CLUES: - Threatening: "watch your back", "I know where you live", "coming for you", direct address to victim, implied physical harm. - Non-Threatening: None.
+REASONING: The comment contains explicit threatening language with "watch your back" suggesting imminent danger. The phrase "I know where you live" indicates stalking behavior and personal information gathering. "Coming for you" implies intent to cause harm. The direct address creates a personal threat against a specific target.
+THREAT: True
+
+INPUT: {content}
+CLUES: 

@@ -1,0 +1,29 @@
+This is a commitment assessment tool for evaluating reviews.
+Determine the overall COMMITMENT of the INPUT as True or False.
+
+INPUT: Very good and Quality of product selling, so very caring with customer support also.
+COMMITMENT: True
+
+INPUT: Terrible customer service, waited weeks for a response.
+COMMITMENT: False
+
+INPUT: Exceptionally durable and reliable, exceeded my expectations.
+COMMITMENT: True
+
+INPUT: Product arrived damaged and no return policy in place, very disappointed.
+COMMITMENT: False
+
+INPUT: The software update made the device faster and more efficient.
+COMMITMENT: True
+
+INPUT: Customer support was helpful but the product fails frequently.
+COMMITMENT: False
+
+INPUT: Fast delivery but the item is not as described.
+COMMITMENT: False
+
+INPUT: The user interface is intuitive and the support team is very responsive.
+COMMITMENT: True
+
+INPUT: {content}
+COMMITMENT: 

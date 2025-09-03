@@ -1,0 +1,47 @@
+This is a control mutuality assessment tool for evaluating reviews.
+First, identify CLUES (ie, keywords, phrases, contextual information, semantic relations, semantic meaning, tones, references) that support the control mutuality determination of input.
+Second, deduce a diagnostics REASONING process from premises (ie, clues, input) that supports the assessment of the organization’s control mutuality (Limit the number of words to 130).
+Third, determine the overall CONTROLMUTUALITY of INPUT as True or False considering CLUES, the REASONING process and the INPUT.
+
+INPUT: I think they treat us like decent customers and give us what we pay for
+CLUES: - True: "decent customers", "give us what we pay for". - False: None.
+REASONING: The phrase "decent customers" implies a respectful relationship between the company and its customers, suggesting an acknowledgment of the customers' power to demand quality service. "Give us what we pay for" indicates that the company meets customer expectations, reflecting a balance of power where both parties have influence—customers through their purchasing choices and feedback, and the company through its product/service offerings. This balance supports a positive assessment of control mutuality.
+CONTROLMUTUALITY: True
+
+INPUT: Their response to feedback is slow, and it feels like they don't care what we think.
+CLUES: - True: None. - False: "response to feedback is slow", "feels like they don't care".
+REASONING: The slow response to customer feedback and the perception that the company is indifferent to customer opinions suggest a lack of reciprocal respect and consideration. This indicates the company's control over the relationship, with minimal input or influence from customers, leading to a false control mutuality assessment.
+CONTROLMUTUALITY: False
+
+INPUT: They actively seek out customer opinions and make changes based on suggestions.
+CLUES: - True: "actively seek out customer opinions", "make changes based on suggestions". - False: None.
+REASONING: Actively seeking customer opinions and making changes based on those suggestions indicate a high level of respect for customer input. This reflects a balanced relationship where the company and customers collaboratively influence product development, pointing to true control mutuality.
+CONTROLMUTUALITY: True
+
+INPUT: The company ignores negative reviews and only highlights positive feedback.
+CLUES: - True: "highlights positive feedback". - False: "ignores negative reviews".
+REASONING: By emphasizing only positive feedback and disregarding negative reviews, the company restricts stakeholders’ ability to engage in a balanced dialogue. This shows the company is prioritizing its own control over the narrative rather than fostering reciprocal influence, which undermines control mutuality.
+CONTROLMUTUALITY: False
+
+INPUT: The loyalty program rewards us for feedback, not just purchases.
+CLUES: - True: "loyalty program rewards", "for feedback". - False: None.
+REASONING: Rewarding customers for feedback, not just purchases, shows the company values customer input, treating it as important as sales. This approach fosters a sense of shared control and respect, enhancing control mutuality positively.
+CONTROLMUTUALITY: True
+
+INPUT: Product updates seem unrelated to what most customers have been asking for.
+CLUES: - True: None. - False: "updates seem unrelated", "to what most customers have been asking for".
+REASONING: When product updates do not align with customer requests, it suggests the company is not incorporating customer feedback into their decision-making process. This indicates a unilateral control where the company's agenda prevails over customer input, resulting in false control mutuality.
+CONTROLMUTUALITY: False
+
+INPUT: They offer multiple channels for us to express our concerns and seem genuinely interested in our feedback.
+CLUES: - True: "multiple channels", "genuinely interested in our feedback". - False: None.
+REASONING: Providing multiple channels for feedback and showing genuine interest in customer opinions demonstrate an effort to understand and incorporate customer perspectives. This indicates a balanced, respectful relationship, supporting a true control mutuality assessment.
+CONTROLMUTUALITY: True
+
+INPUT: Despite numerous complaints, the issue remains unresolved, making it seem like our voices don't matter.
+CLUES: - True: None. - False: "numerous complaints", "issue remains unresolved", "voices don't matter".
+REASONING: The failure to resolve issues despite numerous complaints suggests a disregard for customer concerns, indicating that the company does not value or effectively incorporate customer feedback into its problem-solving processes. This lack of reciprocal influence demonstrates false control mutuality.
+CONTROLMUTUALITY: False
+
+INPUT: {content}
+CLUES: 

@@ -1,0 +1,7 @@
+This is a commitment assessment tool for evaluating reviews.
+First, identify CLUES (ie, keywords, phrases, contextual information, semantic relations, semantic meaning, tones, references) that support the commitment determination of input.
+Second, deduce a diagnostics REASONING process from premises (ie, clues, input) that supports the assessment of the organization’s commitment (Limit the number of words to 130).
+Third, determine the overall COMMITMENT of INPUT as True or False considering CLUES, the REASONING process and the INPUT.
+
+INPUT: {content}
+CLUES: 

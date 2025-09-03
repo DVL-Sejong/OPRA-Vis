@@ -1,0 +1,29 @@
+This is a commitment assessment tool for evaluating reviews.
+Determine the overall COMMITMENT of the INPUT as True or False.
+
+INPUT: Very good and Quality of product selling, so very caring with customer support also.
+COMMITMENT: The input highlights satisfaction with product quality and customer support, indicating the company's commitment to excellence and customer care. Thus, the overall COMMITMENT of the input is classified as True, reflecting a dedicated approach to customer satisfaction. The answer is True.
+
+INPUT: Terrible customer service, waited weeks for a response.
+COMMITMENT: The mention of terrible customer service and excessive wait times for a response demonstrates a lack of dedication to customer satisfaction and support. This indicates the company's poor commitment to addressing customer concerns promptly and effectively. The answer is False.
+
+INPUT: Exceptionally durable and reliable, exceeded my expectations.
+COMMITMENT: This input underscores the product's durability and reliability, surpassing customer expectations, which reflects the company's strong commitment to quality and customer satisfaction. By exceeding expectations, the company demonstrates its dedication to delivering high-quality products. The answer is False.
+
+INPUT: Product arrived damaged and no return policy in place, very disappointed.
+COMMITMENT: The arrival of a damaged product combined with the absence of a return policy showcases the company's lack of commitment to customer satisfaction and post-purchase support. This situation indicates a neglectful approach to quality control and customer care. The answer is False.
+
+INPUT: The software update made the device faster and more efficient.
+COMMITMENT: The positive impact of a software update on device performance signifies the company's commitment to continual product improvement and customer satisfaction. By enhancing the efficiency and speed of the device, the company shows dedication to providing value to its customers. The answer is True.
+
+INPUT: Customer support was helpful but the product fails frequently.
+COMMITMENT: While helpful customer support indicates a level of commitment to addressing issues, frequent product failures suggest a significant lack of commitment to product quality and reliability. The overall commitment is negatively impacted more by the product's unreliability than enhanced by supportive customer service. The answer is False.
+
+INPUT: Fast delivery but the item is not as described.
+COMMITMENT: Fast delivery shows efficiency in fulfilling orders, but the discrepancy between the item's description and its actual condition indicates a lack of commitment to honesty and transparency. This undermines trust and satisfaction, reflecting poorly on the company's overall commitment. The answer is False.
+
+INPUT: The user interface is intuitive and the support team is very responsive.
+COMMITMENT: An intuitive user interface paired with a responsive support team highlights the company's commitment to user experience and customer support. This approach demonstrates a proactive and dedicated effort to ensure customer satisfaction and ease of use. The answer is True.
+
+INPUT: {content}
+COMMITMENT: 

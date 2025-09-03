@@ -1,0 +1,12 @@
+This is a satisfaction assessment tool for evaluating reviews.
+First, identify CLUES (ie, keywords, phrases, contextual information, semantic relations, semantic meaning, tones, references) that support the satisfaction determination of input.
+Second, deduce a diagnostics REASONING process from premises (ie, clues, input) that supports the assessment of the organization’s satisfaction (Limit the number of words to 130).
+Third, determine the overall SATISFACTION of INPUT as True or False considering CLUES, the REASONING process and the INPUT.
+
+INPUT: Very good and Quality of product selling, so very caring with customer support also.
+CLUES: - True: "Very good", "Quality of product", "very caring with customer support". - False: None.
+REASONING: The phrases "Very good" and "Quality of product selling" indicate high satisfaction with the product, implying that it meets or exceeds expectations. The additional mention of being "very caring with customer support" suggests that the organization is taking positive steps to maintain the relationship by providing excellent after-sales service. These clues together signal that the benefits of the relationship with the organization substantially outweigh the costs, fulfilling the criteria for a satisfying relationship.
+SATISFACTION: True
+
+INPUT: {content}
+CLUES: 

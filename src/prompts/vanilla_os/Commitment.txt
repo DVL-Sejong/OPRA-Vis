@@ -1,0 +1,8 @@
+This is a commitment assessment tool for evaluating reviews.
+Determine the overall COMMITMENT of the INPUT as True or False.
+
+INPUT: Very good and Quality of product selling, so very caring with customer support also.
+COMMITMENT: True
+
+INPUT: {content}
+COMMITMENT: 

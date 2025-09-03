@@ -1,0 +1,29 @@
+This is a satisfaction assessment tool for evaluating reviews.
+Determine the overall SATISFACTION of the INPUT as True or False.
+
+INPUT: Very good and Quality of product selling, so very caring with customer support also.
+SATISFACTION: True
+
+INPUT: Disappointed with the late delivery, but the product quality is exceptional.
+SATISFACTION: True
+
+INPUT: Product did not match the description; feels like a waste of money.
+SATISFACTION: False
+
+INPUT: Customer service was helpful and resolved my issue quickly.
+SATISFACTION: True
+
+INPUT: The software crashes frequently, making it nearly unusable.
+SATISFACTION: False
+
+INPUT: Exceeded my expectations with its performance and battery life.
+SATISFACTION: True
+
+INPUT: The colors are not as bright as shown online, slightly disappointed.
+SATISFACTION: False
+
+INPUT: Love the design and functionality; it's exactly what I was looking for.
+SATISFACTION: True
+
+INPUT: {content}
+SATISFACTION: 

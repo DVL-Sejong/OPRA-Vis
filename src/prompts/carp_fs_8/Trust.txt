@@ -1,0 +1,47 @@
+This is a trustworthiness assessment tool for evaluating reviews.
+First, identify CLUES (ie, keywords, phrases, contextual information, semantic relations, semantic meaning, tones, references) that support the trustworthiness determination of input.
+Second, deduce a diagnostics REASONING process from premises (ie, clues, input) that supports the assessment of the organization’s trustworthiness (Limit the number of words to 130).
+Third, determine the overall TRUSTWORTHINESS of INPUT as True or False considering CLUES, the REASONING process and the INPUT.
+
+INPUT: I think they treat us like decent customers and give us what we pay for
+CLUES: - True: "decent customers", "give us what we pay for". - False: None.
+REASONING: The use of "decent customers" implies fair treatment, indicating a true trustworthiness. Additionally, the phrase "give us what we pay for" suggests satisfaction with the product/service meeting expectations. Both phrases reflect trust in the company's integrity and delivery.
+TRUSTWORTHINESS: True
+
+INPUT: They promised a two-year warranty but refused to honor it when I had issues.
+CLUES: - True: None. - False: "promised a two-year warranty", "refused to honor it".
+REASONING: The refusal to honor a previously promised two-year warranty directly contradicts the organization's commitment, suggesting a lack of reliability and integrity. This breach of promise undermines trust in the company's statements and policies.
+TRUSTWORTHINESS: False
+
+INPUT: Customer service was transparent about the delay and offered compensation.
+CLUES: - True: "transparent about the delay", "offered compensation". - False: None.
+REASONING: Transparency in communication about issues and proactive compensation demonstrate respect for the customer and a commitment to fairness. These actions build trust by showing that the company values its customers and is willing to take responsibility for mistakes.
+TRUSTWORTHINESS: True
+
+INPUT: The product descriptions are misleading and do not reflect the actual features.
+CLUES: - True: None. - False: "misleading", "do not reflect the actual features".
+REASONING: Misleading product descriptions that do not accurately represent the actual features suggest an attempt to deceive or overpromise. This discrepancy between claims and reality erodes trust in the company's honesty and transparency.
+TRUSTWORTHINESS: False
+
+INPUT: Reviews are heavily moderated to only show positive feedback, raising doubts about authenticity.
+CLUES: - True: None. - False: "heavily moderated", "only show positive feedback", "raising doubts about authenticity".
+REASONING: The heavy moderation of reviews to display only positive feedback undermines the authenticity of customer experiences and suggests a manipulation of the narrative. This practice raises serious doubts about the company's transparency and reliability.
+TRUSTWORTHINESS: False
+
+INPUT: The return process was straightforward and honored within the stated period.
+CLUES: - True: "straightforward", "honored within the stated period". - False: None.
+REASONING: A straightforward and honored return process demonstrates the company's reliability and respect for customer rights, reinforcing trust in the company's promises and operational integrity.
+TRUSTWORTHINESS: True
+
+INPUT: Despite the high cost, the quality justifies the price, and their honesty about sourcing materials is appreciated.
+CLUES: - True: "quality justifies the price", "honesty about sourcing materials". - False: None.
+REASONING: Justification of a high cost by quality and honesty regarding material sourcing reflects the company's integrity and commitment to transparency. These practices suggest a trustworthy relationship between the company and its customers.
+TRUSTWORTHINESS: True
+
+INPUT: The company frequently changes terms without notifying customers, leading to unexpected charges.
+CLUES: - True: None. - False: "changes terms without notifying", "unexpected charges".
+REASONING: Changing terms without customer notification and applying unexpected charges indicate a lack of transparency and fairness, severely undermining trust. This behavior suggests that the company prioritizes its interests over ethical standards and customer relationships.
+TRUSTWORTHINESS: False
+
+INPUT: {content}
+CLUES: 

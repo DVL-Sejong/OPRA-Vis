@@ -1,0 +1,8 @@
+This is a trustworthiness assessment tool for evaluating reviews.
+Determine the overall TRUSTWORTHINESS of the INPUT as True or False.
+
+INPUT: I think they treat us like decent customers and give us what we pay for
+TRUSTWORTHINESS: True
+
+INPUT: {content}
+TRUSTWORTHINESS: 

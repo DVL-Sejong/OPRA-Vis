@@ -1,0 +1,47 @@
+This is a commitment assessment tool for evaluating reviews.
+First, identify CLUES (ie, keywords, phrases, contextual information, semantic relations, semantic meaning, tones, references) that support the commitment determination of input.
+Second, deduce a diagnostics REASONING process from premises (ie, clues, input) that supports the assessment of the organization’s commitment (Limit the number of words to 130).
+Third, determine the overall COMMITMENT of INPUT as True or False considering CLUES, the REASONING process and the INPUT.
+
+INPUT: Very good and Quality of product selling, so very caring with customer support also.
+CLUES: - True: "Very good", "Quality of product selling", "very caring with customer support". - False: None.
+REASONING: The phrases "Very good" and "Quality of product selling" indicate a high level of satisfaction with the product itself, suggesting that the organization invests energy in offering high-quality goods. The addition of "very caring with customer support" implies that the organization also invests in post-sale service, indicating a holistic approach to customer satisfaction. This dual focus on product quality and customer service reflects a strong organizational commitment to maintaining and promoting positive relationships with customers.
+COMMITMENT: True
+
+INPUT: Terrible customer service, waited weeks for a response.
+CLUES: - True: None. - False: "Terrible customer service", "waited weeks for a response".
+REASONING: The use of "Terrible customer service" and the mention of a long wait time for a response indicate significant issues with the organization's support system. This lack of timely communication and resolution efforts suggests a poor commitment to customer satisfaction and support.
+COMMITMENT: False
+
+INPUT: Exceptionally durable and reliable, exceeded my expectations.
+CLUES: - True: "Exceptionally durable", "reliable", "exceeded my expectations". - False: None.
+REASONING: The words "Exceptionally durable" and "reliable" suggest that the product offers outstanding performance and longevity. "Exceeded my expectations" further underscores a high level of product satisfaction, reflecting the organization's commitment to quality and customer satisfaction.
+COMMITMENT: True
+
+INPUT: Product arrived damaged and no return policy in place, very disappointed.
+CLUES: - True: None. - False: "Product arrived damaged", "no return policy in place", "very disappointed".
+REASONING: The arrival of a damaged product combined with the absence of a return policy indicates a lack of care for customer experience and satisfaction. This situation reflects poorly on the organization's commitment to quality control and customer support.
+COMMITMENT: False
+
+INPUT: The software update made the device faster and more efficient.
+CLUES: - True: "The software update", "faster", "more efficient". - False: None.
+REASONING: The mention of a beneficial software update leading to improved performance suggests that the organization is proactive in enhancing user experience and product functionality. This reflects a strong commitment to continuous improvement and customer satisfaction.
+COMMITMENT: True
+
+INPUT: Customer support was helpful but the product fails frequently.
+CLUES: - True: "Customer support was helpful". - False: "the product fails frequently".
+REASONING: While the helpful customer support indicates some level of commitment to service, the frequent product failures highlight significant quality issues. The negative impact of product unreliability outweighs the positive customer service experience.
+COMMITMENT: False
+
+INPUT: Fast delivery but the item is not as described.
+CLUES: - True: "Fast delivery". - False: "the item is not as described".
+REASONING: Prompt delivery indicates efficiency in order processing and shipping; however, the discrepancy between the product description and the actual item received suggests a lack of accuracy and reliability in product representation, undermining overall commitment to customer satisfaction.
+COMMITMENT: False
+
+INPUT: The user interface is intuitive and the support team is very responsive.
+CLUES: - True: "The user interface is intuitive", "the support team is very responsive". - False: None.
+REASONING: An intuitive user interface, combined with a responsive support team, demonstrates the organization's focus on creating a positive user experience and offering effective customer support, indicating strong commitment to user satisfaction.
+COMMITMENT: True
+
+INPUT: {content}
+CLUES: 

@@ -1,0 +1,29 @@
+This is a trustworthiness assessment tool for evaluating reviews.
+Determine the overall TRUSTWORTHINESS of the INPUT as True or False.
+
+INPUT: I think they treat us like decent customers and give us what we pay for
+TRUSTWORTHINESS: The input suggests a positive perception of customer treatment and implies satisfaction with the value received for the payment. It indicates a belief in fair treatment and the fulfillment of transactional expectations. Therefore, the overall TRUSTWORTHINESS of the input can be classified as True. The answer is True.
+
+INPUT: They promised a two-year warranty but refused to honor it when I had issues.
+TRUSTWORTHINESS: The refusal to honor a promised two-year warranty directly undermines the trust in the company's commitments, indicating a breach of trust. This action contradicts previous assurances and significantly impacts the perceived reliability and integrity of the company. The answer is True.
+
+INPUT: Customer service was transparent about the delay and offered compensation.
+TRUSTWORTHINESS: Transparency about issues and compensatory measures indicate a company's honesty and responsibility towards its customers. This approach builds trust by demonstrating that the company values customer satisfaction and is willing to address problems openly. The answer is True.
+
+INPUT: The product descriptions are misleading and do not reflect the actual features.
+TRUSTWORTHINESS: Misleading product descriptions that fail to accurately represent the product's features erode trust in the company's advertising practices. This discrepancy suggests a lack of honesty in how products are presented to consumers, negatively impacting trustworthiness. The answer is False.
+
+INPUT: Reviews are heavily moderated to only show positive feedback, raising doubts about authenticity.
+TRUSTWORTHINESS: The heavy moderation of reviews to exclusively highlight positive feedback creates skepticism regarding the authenticity and transparency of the feedback mechanism. This practice suggests an attempt to manipulate public perception, undermining trust in the company's credibility. The answer is False.
+
+INPUT: The return process was straightforward and honored within the stated period.
+TRUSTWORTHINESS: A straightforward and honored return process demonstrates the company's reliability and respect for its policies and commitments. Such actions reinforce trust by showing that the company stands by its word and treats customers fairly. The answer is True.
+
+INPUT: Despite the high cost, the quality justifies the price, and their honesty about sourcing materials is appreciated.
+TRUSTWORTHINESS: Justifying a high cost with superior quality and being transparent about material sourcing reflect the company's integrity and commitment to honest business practices. This transparency and value delivery foster trust in the company's products and ethics. The answer is True.
+
+INPUT: The company frequently changes terms without notifying customers, leading to unexpected charges.
+TRUSTWORTHINESS: Changing terms without prior notification and imposing unexpected charges demonstrate a lack of transparency and respect for customer rights. This behavior erodes trust by showing a disregard for fair and open communication, significantly impacting the company's trustworthiness. The answer is False.
+
+INPUT: {content}
+TRUSTWORTHINESS: 

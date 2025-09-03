@@ -1,0 +1,8 @@
+This is a trustworthiness assessment tool for evaluating reviews.
+Determine the overall TRUSTWORTHINESS of the INPUT as True or False.
+
+INPUT: I think they treat us like decent customers and give us what we pay for
+TRUSTWORTHINESS: The input suggests a positive perception of customer treatment and implies satisfaction with the value received for the payment. It indicates a belief in fair treatment and the fulfillment of transactional expectations. Therefore, the overall TRUSTWORTHINESS of the input can be classified as True. The answer is True.
+
+INPUT: {content}
+TRUSTWORTHINESS: 

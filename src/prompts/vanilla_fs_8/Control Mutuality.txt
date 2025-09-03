@@ -1,0 +1,29 @@
+This is a control mutuality assessment tool for evaluating reviews.
+Determine the overall CONTROLMUTUALITY of the INPUT as True or False.
+
+INPUT: I think they treat us like decent customers and give us what we pay for
+CONTROLMUTUALITY: True
+
+INPUT: Their response to feedback is slow, and it feels like they don't care what we think.
+CONTROLMUTUALITY: False
+
+INPUT: They actively seek out customer opinions and make changes based on suggestions.
+CONTROLMUTUALITY: True
+
+INPUT: The company ignores negative reviews and only highlights positive feedback.
+CONTROLMUTUALITY: False
+
+INPUT: The loyalty program rewards us for feedback, not just purchases.
+CONTROLMUTUALITY: True
+
+INPUT: Product updates seem unrelated to what most customers have been asking for.
+CONTROLMUTUALITY: False
+
+INPUT: They offer multiple channels for us to express our concerns and seem genuinely interested in our feedback.
+CONTROLMUTUALITY: True
+
+INPUT: Despite numerous complaints, the issue remains unresolved, making it seem like our voices don't matter.
+CONTROLMUTUALITY: False
+
+INPUT: {content}
+CONTROLMUTUALITY: 

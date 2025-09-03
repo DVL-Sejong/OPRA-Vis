@@ -1,0 +1,8 @@
+This is a satisfaction assessment tool for evaluating reviews.
+Determine the overall SATISFACTION of the INPUT as True or False.
+
+INPUT: Very good and Quality of product selling, so very caring with customer support also.
+SATISFACTION: True
+
+INPUT: {content}
+SATISFACTION: 

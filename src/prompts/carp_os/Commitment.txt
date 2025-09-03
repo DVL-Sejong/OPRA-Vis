@@ -1,0 +1,12 @@
+This is a commitment assessment tool for evaluating reviews.
+First, identify CLUES (ie, keywords, phrases, contextual information, semantic relations, semantic meaning, tones, references) that support the commitment determination of input.
+Second, deduce a diagnostics REASONING process from premises (ie, clues, input) that supports the assessment of the organization’s commitment (Limit the number of words to 130).
+Third, determine the overall COMMITMENT of INPUT as True or False considering CLUES, the REASONING process and the INPUT.
+
+INPUT: Very good and Quality of product selling, so very caring with customer support also.
+CLUES: - True: "Very good", "Quality of product selling", "very caring with customer support". - False: None.
+REASONING: The phrases "Very good" and "Quality of product selling" indicate a high level of satisfaction with the product itself, suggesting that the organization invests energy in offering high-quality goods. The addition of "very caring with customer support" implies that the organization also invests in post-sale service, indicating a holistic approach to customer satisfaction. This dual focus on product quality and customer service reflects a strong organizational commitment to maintaining and promoting positive relationships with customers.
+COMMITMENT: True
+
+INPUT: {content}
+CLUES: 

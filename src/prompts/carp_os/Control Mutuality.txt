@@ -1,0 +1,12 @@
+This is a control mutuality assessment tool for evaluating reviews.
+First, identify CLUES (ie, keywords, phrases, contextual information, semantic relations, semantic meaning, tones, references) that support the control mutuality determination of input.
+Second, deduce a diagnostics REASONING process from premises (ie, clues, input) that supports the assessment of the organization’s control mutuality (Limit the number of words to 130).
+Third, determine the overall CONTROLMUTUALITY of INPUT as True or False considering CLUES, the REASONING process and the INPUT.
+
+INPUT: I think they treat us like decent customers and give us what we pay for
+CLUES: - True: "decent customers", "give us what we pay for". - False: None.
+REASONING: The phrase "decent customers" implies a respectful relationship between the company and its customers, suggesting an acknowledgment of the customers' power to demand quality service. "Give us what we pay for" indicates that the company meets customer expectations, reflecting a balance of power where both parties have influence—customers through their purchasing choices and feedback, and the company through its product/service offerings. This balance supports a positive assessment of control mutuality.
+CONTROLMUTUALITY: True
+
+INPUT: {content}
+CLUES: 

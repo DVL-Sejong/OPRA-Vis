@@ -1,0 +1,8 @@
+This is a control mutuality assessment tool for evaluating reviews.
+Determine the overall CONTROLMUTUALITY of the INPUT as True or False.
+
+INPUT: I think they treat us like decent customers and give us what we pay for
+CONTROLMUTUALITY: The input indicates a balanced relationship, with customers feeling valued and fairly treated. Hence, the overall CONTROLMUTUALITY of the input is classified as true, reflecting mutual respect and fairness in the exchange. The anwer is True.
+
+INPUT: {content}
+CONTROLMUTUALITY: 

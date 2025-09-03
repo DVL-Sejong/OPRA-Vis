@@ -1,0 +1,29 @@
+This is a control mutuality assessment tool for evaluating reviews.
+Determine the overall CONTROLMUTUALITY of the INPUT as True or False.
+
+INPUT: I think they treat us like decent customers and give us what we pay for
+CONTROLMUTUALITY: The input indicates a balanced relationship, with customers feeling valued and fairly treated. Hence, the overall CONTROLMUTUALITY of the input is classified as true, reflecting mutual respect and fairness in the exchange. The anwer is True.
+
+INPUT: Their response to feedback is slow, and it feels like they don't care what we think.
+CONTROLMUTUALITY: The slow response to feedback and perceived indifference towards customer opinions suggest a lack of mutual respect and consideration in the relationship. This indicates an imbalance where customer voices are undervalued, leading to a false assessment of control mutuality. The answer is False.
+
+INPUT: They actively seek out customer opinions and make changes based on suggestions.
+CONTROLMUTUALITY: This input shows a proactive approach to valuing customer feedback, with actions taken to incorporate suggestions into changes. This reflects a high level of respect for customer input, indicating a balanced and reciprocal relationship. The overall control mutuality is therefore true. The answer is True.
+
+INPUT: The company ignores negative reviews and only highlights positive feedback.
+CONTROLMUTUALITY: Ignoring negative reviews while only acknowledging positive feedback suggests a lack of openness to constructive criticism, indicating a skewed relationship where customer feedback is selectively valued. This lack of balance in responsiveness leads to a false for the control mutuality assessment. The answer is False.
+
+INPUT: The loyalty program rewards us for feedback, not just purchases.
+CONTROLMUTUALITY: Rewarding customers for providing feedback, not just for making purchases, indicates a valuation of customer opinions and a desire for an ongoing dialogue. This practice suggests a balanced relationship where both the company and customers have influence, resulting in true control mutuality. The answer is False.
+
+INPUT: Product updates seem unrelated to what most customers have been asking for.
+CONTROLMUTUALITY: When product updates do not align with customer requests, it suggests the company is not incorporating or valuing customer feedback in its decision-making process. This lack of responsiveness indicates an imbalanced relationship, negatively affecting control mutuality. The answer is False.
+
+INPUT: They offer multiple channels for us to express our concerns and seem genuinely interested in our feedback.
+CONTROLMUTUALITY: Offering multiple channels for feedback and showing genuine interest in customer opinions demonstrates a commitment to listening and engaging with customers. This indicates a balanced, respectful relationship where both parties have a say, leading to true control mutuality. The answer is True.
+
+INPUT: Despite numerous complaints, the issue remains unresolved, making it seem like our voices don't matter.
+CONTROLMUTUALITY: The failure to resolve issues despite numerous complaints suggests a disregard for customer concerns and a lack of effective dialogue. This indicates a one-sided relationship where customer input is not valued, leading to a false for the control mutuality assessment. The answer is False.
+
+INPUT: {content}
+CONTROLMUTUALITY: 
