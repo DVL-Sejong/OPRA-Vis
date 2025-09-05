@@ -15,7 +15,7 @@ OPRA-Vis integrates LLM prompting with interactive visualizations to help PR exp
 
 ## Demo Video
 
-https://github.com/user-attachments/assets/a71f5ec5-e28b-479c-a4a5-e04d3295b38c
+https://github.com/user-attachments/assets/1bd52af5-3b6c-4c67-8810-cf2e850d30a0
 
 [▶ Watch on YouTube](https://youtu.be/oXUGtWGxAUw)
 
